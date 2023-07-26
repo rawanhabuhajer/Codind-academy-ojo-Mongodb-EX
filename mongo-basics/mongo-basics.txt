@@ -1,0 +1,21 @@
+1- mongo;
+
+2- use mydb;
+
+3- db.createCollection("users");
+
+4- db.users.insertOne({"name":"Adam","age":25});
+
+5- Input: db.users.find();
+
+6- db.users.updateOne({"name":"Adam"},{"$set":{"age":30}});
+
+7- db.users.deleteOne({"name":"Adam"});
+
+8- db.users.createIndex({"name":1});
+
+9- db.users.find({"$or":[{"name":"Adam"},{"age":30}]});
+
+10- db.users.find({"age": {"$in": [25, 30]}});
+
+11- db.users.find({"$text": {"$search": "Adam"}});
